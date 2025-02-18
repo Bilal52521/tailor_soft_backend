@@ -17,7 +17,7 @@ app.use("/api/auth", authRouter);
 app.use("/api", skRouter);
 app.use("/api", wtRouter);
 
-app.get("/", (req, res) => {
+app.get("/test", (req, res) => {
   res.send("ABC");
 });
 
