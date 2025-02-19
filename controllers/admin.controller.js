@@ -3,6 +3,8 @@ import bcryptpass from "bcrypt";
 import jwt from "jsonwebtoken";
 import { where } from "sequelize";
 
+const JWT_SECRET = "##$@!@#%$^WEFS$#%2dsfse^354423#@$WE$wer5435W$5";
+
 export const sign_up = async (req, res, next) => {
   try {
     const { name, email, password } = req.body;
